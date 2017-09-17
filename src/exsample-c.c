@@ -1,14 +1,9 @@
 ﻿#include <stdio.h>
-#include <exsample.hpp>
-
-extern "C" int exsample_c_func(void);
 
 
-int main(void)
+int exsample_c_func(void)
 {
-	printf("abcd\n");
-
-	exsample_c_func();
+	printf("exsample-c-func\n");
 
 #ifdef	_USER_DEBUG_
 	printf("USERDEBUG_C");
